@@ -1,0 +1,36 @@
+<footer class="bg-charcoal text-white">
+  {{ partial:layout/inner class="lg:flex lg:items-center lg:justify-between" }}
+    <div class="flex flex-col md:flex-row space-y-30 md:space-y-0 md:space-x-70 lg:space-x-35 xl:space-x-40">
+      {{ partial:icons/logo class="block w-200 lg:max-w-125 xl:max-w-200 h-auto text-white" }}
+      <span class="hidden lg:block w-1 h-60 xl:h-70 bg-white">&nbsp;</span>
+      {{ partial:icons/logo-aporta class="block w-full max-w-[300px] lg:max-w-[250px] xl:max-w-[300px] h-auto  text-white" }}
+    </div>
+    <nav class="mt-60 pt-45 md:mt-60 md:pt-60 lg:mt-0 lg:pt-0 border-t border-white lg:border-none font-light">
+      <ul class="flex gap-x-15 md:gap-x-40 text-xs xl:font-sm">
+        <li>
+          <a 
+            href="/impressum"
+            title="Impressum"
+            class="animated-underline py-5">
+            Impressum
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/datenschutz"
+            title="Datenschutz"
+            class="animated-underline py-5">
+            Datenschutz
+          </a>
+        </li>
+        <li>
+          &copy; {{ date | format('Y') }}
+        </li>
+      </ul>
+    </nav>
+  {{ /partial:layout/inner }}
+</footer>
+{{ vite src="resources/js/app.js" }}
+{{ livewire:scripts }}
+</body>
+</html>

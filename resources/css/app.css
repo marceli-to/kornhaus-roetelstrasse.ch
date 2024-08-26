@@ -1,0 +1,90 @@
+@import "typo/webfonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+main {
+  @apply flex-1;
+}
+
+main p {
+}
+
+main p:last-child {
+  @apply mb-0;
+}
+
+main ul:not(main nav ul) {
+  @apply list-disc m-0 ml-16;
+}
+
+main ul:not(main nav ul) p {
+  @apply mb-0 inline;
+}
+
+main li:not(main nav li) {
+  @apply mb-4
+}
+
+
+/* Text */
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+em, i {
+}
+
+/* Helpers */
+.nobr {
+  @apply whitespace-nowrap;
+}
+
+.animated-underline {
+  @apply relative no-underline;
+}
+
+.animated-underline::after {
+  @apply content-[''] absolute w-full h-1 bottom-0 left-0 bg-white origin-bottom-left scale-x-0 transition-transform duration-200 ease-out;
+}
+
+.animated-underline:hover::after {
+  @apply scale-x-100;
+}
+
+body.privacy main {
+}
+
+body.privacy main h1 {
+}
+
+body.privacy main h2 {
+}
+
+body.privacy main h3 {
+}
+
+body.privacy main ul {
+}
+
+body.privacy main li {
+}
+
+body.privacy main li p {
+}
+
+body.privacy main li:before {
+  content: "– ";
+  margin-right: 5px;
+}
+
+body.privacy main a {
+}

@@ -1,0 +1,20 @@
+title: Editor
+fields:
+  -
+    handle: editor
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+        - nobr
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Text
+      container: assets
+      localizable: true

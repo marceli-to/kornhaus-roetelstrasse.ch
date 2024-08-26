@@ -1,0 +1,18 @@
+<div 
+  class="right-0 top-0 h-dvh w-full z-50 md:relative md:h-auto md:!block md:!opacity-100 md:bg-transparent md:w-full"
+  x-cloak 
+  x-show="menu"
+  x-transition:enter="transition ease-out duration-240"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition ease-in duration-240"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0">
+  <nav class="text-black md:w-full md:max-w-8xl md:mx-auto md:px-25 md:py-15">
+    <ul>
+      {{ nav:main }}
+        {{ partial:menu/item }}
+      {{ /nav:main }}
+    </ul>
+  </nav>
+</div>
