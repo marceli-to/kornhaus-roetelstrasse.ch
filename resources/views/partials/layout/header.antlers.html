@@ -1,4 +1,26 @@
-<header class=" {{ class }}">
-  {{ partial:menu/button }}
-  {{ partial:menu/wrapper }}
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('stickyHeader', () => ({
+      isSticky: false,
+      init() {
+        console.log('init');
+        console.log(window.scrollY);
+        console.log(this.isSticky);
+        window.addEventListener('scroll', () => {
+          this.isSticky = window.scrollY > 200;
+        });
+      }
+    }));
+  });
+</script>
+<header 
+  x-data="stickyHeader"
+  :class="{ '!bg-red-50': isSticky }"
+  class="bg-white lg:bg-transparent py-15 lg:py-25 fixed top-0 left-0 right-0 w-full z-50 {{ class }}"
+>
+  {{ partial:layout/inner class="lg:flex lg:justify-between lg:items-center" }}
+    {{ partial:icons/logo class="block w-200 h-auto text-charcoal" }}
+    {{ partial:menu/button }}
+    {{ partial:menu/wrapper }}
+  {{ /partial:layout/inner }}
 </header>

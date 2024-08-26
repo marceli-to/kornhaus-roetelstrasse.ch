@@ -49,11 +49,16 @@ em, i {
 }
 
 .animated-underline {
-  @apply relative no-underline;
+  @apply relative no-underline py-5;
 }
 
+.animated-underline.is-current::after,
 .animated-underline::after {
-  @apply content-[''] absolute w-full h-1 bottom-0 left-0 bg-white origin-bottom-left scale-x-0 transition-transform duration-200 ease-out;
+  @apply content-[''] absolute w-full h-1 bottom-0 left-0 bg-charcoal origin-bottom-left scale-x-0 transition-transform duration-200 ease-out;
+}
+
+.dark .animated-underline::after {
+  @apply bg-white;
 }
 
 .animated-underline:hover::after {

@@ -3,11 +3,11 @@
   x-on:click="menu = ! menu" 
   title="Menü anzeigen"
   :class="{ 'is-active': menu === true }"
-  class="fixed left-25 top-25 z-60 group flex justify-center items-center w-20 h-21 md:hidden">
+  class="fixed right-20 top-15 z-60 group flex justify-center items-center w-40 h-40 lg:hidden">
   <span x-show="menu === false">
-    {{ partial:icons/burger class="w-20 h-auto" }}
+    {{ partial:icons/burger class="w-30 h-auto" }}
   </span>
   <span x-cloak x-show="menu === true">
-    {{ partial:icons/cross class="w-20 h-auto" }}
+    {{ partial:icons/cross class="w-28 h-auto" }}
   </span>
 </a>

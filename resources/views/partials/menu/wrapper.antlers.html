@@ -1,5 +1,5 @@
 <div 
-  class="right-0 top-0 h-dvh w-full z-50 md:relative md:h-auto md:!block md:!opacity-100 md:bg-transparent md:w-full"
+  class="left-0 top-0 h-dvh lg:h-auto w-full lg:w-auto z-50 lg:!opacity-100 lg:!block lg:!bg-transparent"
   x-cloak 
   x-show="menu"
   x-transition:enter="transition ease-out duration-240"
@@ -8,8 +8,8 @@
   x-transition:leave="transition ease-in duration-240"
   x-transition:leave-start="opacity-100"
   x-transition:leave-end="opacity-0">
-  <nav class="text-black md:w-full md:max-w-8xl md:mx-auto md:px-25 md:py-15">
-    <ul>
+  <nav class="text-black mt-40 lg:mt-0">
+    <ul class="flex flex-col gap-y-35 lg:gap-y-0 lg:flex-row lg:gap-x-40">
       {{ nav:main }}
         {{ partial:menu/item }}
       {{ /nav:main }}
