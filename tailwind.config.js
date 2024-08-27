@@ -38,6 +38,11 @@ export default {
         'md': '1.125rem', // 18px
         'lg': '1.25rem', // 20px
         'xl': '1.375rem', // 22px
+        '2xl': '1.5rem', // 24px
+        '3xl': '1.75rem', // 28px
+        '4xl': '2.125rem', // 34px
+        '5xl': '2.5rem', // 40px
+        '6xl': '3rem', // 48px
       },
       
       zIndex: {

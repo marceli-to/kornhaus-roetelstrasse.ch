@@ -1,0 +1,26 @@
+title: Fakten
+fields:
+  -
+    handle: line
+    field:
+      type: replicator
+      display: Zeilen
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            line:
+              display: Zeile
+              instructions: 'Tabellenzeile hinzufügen.'
+              icon: text-formatting-initial-letter
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: text
+                  field:
+                    type: textarea
+                    display: Text

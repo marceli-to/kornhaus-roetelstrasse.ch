@@ -1,0 +1,26 @@
+<section 
+  data-section="architektur" 
+  data-section-threshold="0.6" 
+  class="py-72 md:py-96 lg:py-120">
+  {{ partial:components/anchor name="architektur" }}
+  {{ partial:layout/inner }}
+    <h1>Architektur</h1>
+    {{ if text }}
+      <article class="md:columns-2 md:gap-x-30 lg:gap-x-60">
+        {{ text }}
+      </article>
+    {{ /if }}
+    {{ if callout }}
+      <div class="mt-72 md:mt-96 lg:mt-120 text-2xl md:text-3xl lg:text-4xl xl:text-5xl border-l border-black pl-20 py-15 md:pl-30 md:py-20 xl:pl-40 xl:py-30">
+        {{ callout }}
+      </div>
+    {{ /if }}
+  {{ /partial:layout/inner }}
+
+</section>
+{{ if image }}
+  {{ partial:components/media/image 
+    :image="image" 
+    class="w-full h-auto"
+    :sizes="['md','lg','xl','2xl']" }}
+{{ /if }}

@@ -4,3 +4,4 @@ Alpine.start();
 
 import './bootstrap';
 import './modules/touch';
+import './modules/menu';

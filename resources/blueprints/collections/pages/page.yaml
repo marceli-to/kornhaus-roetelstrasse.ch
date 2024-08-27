@@ -27,9 +27,34 @@ tabs:
                   display: Hauptelemente
                   icon: addon-boxes-stack
                   sets:
-                    neues_set:
-                      display: 'Neues Set'
-                      fields: {  }
+                    intro:
+                      display: Intro
+                      instructions: 'Intro mit Bild und Call to action hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: intro
+                    lead:
+                      display: Lead
+                      instructions: 'Leadtext hinzufügen.'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: lead
+                    facts:
+                      display: Fakten
+                      instructions: 'Fakten hinzufügen.'
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: facts
+                    architecture:
+                      display: Architektur
+                      instructions: 'Architektur-Inhalt hinzufügen.'
+                      icon: text-formatting-image-bottom
+                      fields:
+                        -
+                          import: architecture
   seo:
     display: SEO
     sections:
