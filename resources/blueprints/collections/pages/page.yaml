@@ -61,6 +61,13 @@ tabs:
                       fields:
                         -
                           import: entrepreneurs
+                    portrait:
+                      display: Portrait
+                      instructions: 'Portrait hinzufügen'
+                      icon: text-formatting-image-left
+                      fields:
+                        -
+                          import: portrait
   seo:
     display: SEO
     sections:

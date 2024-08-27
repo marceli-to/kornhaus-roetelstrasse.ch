@@ -1,0 +1,18 @@
+<section data-section="portrait" class="bg-terracotta min-h-200">
+  {{ partial:components/anchor name="portrait" }}
+  {{ partial:layout/inner class="py-72 md:py-96 lg:py-120" }}
+  <div class="md:flex md:gap-x-30 lg:gap-x-60">
+    {{ partial:components/media/image 
+      :image="image" 
+      class="w-full h-auto object-cover rounded-full"
+      wrapperClass="max-w-[200px] md:max-w-[300px] lg:max-w-[400px] mx-auto mb-30 md:max-w-1/4"
+      :sizes="['md','lg']" }}
+      <article class="leading-[1.45] max-w-4xl">
+        {{ partial:icons/logo-aporta class="block w-full max-w-[150px] h-auto text-black mb-30" }}
+        {{ text }}
+        {{ partial:components/buttons/arrow link="{{ cta_link }}" text="zur Website der Stiftung" class="font-semibold" }}
+      </article>
+    </div>
+
+  {{ /partial:layout/inner }}
+</section>

@@ -5,6 +5,7 @@ fields:
     field:
       type: replicator
       display: Unternehmer
+      collapse: true
       sets:
         neue_set-gruppe:
           display: 'Neue Set-Gruppe'
