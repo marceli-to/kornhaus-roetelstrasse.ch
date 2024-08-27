@@ -27,6 +27,13 @@ tabs:
                   display: Hauptelemente
                   icon: addon-boxes-stack
                   sets:
+                    editor:
+                      display: Editor
+                      instructions: 'Texteditor hinzufügen.'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
                     intro:
                       display: Intro
                       instructions: 'Intro mit Bild und Call to action hinzufügen.'
@@ -56,7 +63,8 @@ tabs:
                         -
                           import: architecture
                     entrepreneurs:
-                      display: Unternehmer
+                      display: Unternehmerliste
+                      instructions: 'Unternehmerliste hinzufügen.'
                       icon: dashboard-layout
                       fields:
                         -

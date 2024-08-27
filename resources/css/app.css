@@ -44,6 +44,10 @@ h3 {
 em, i {
 }
 
+strong {
+  @apply font-semibold;
+}
+
 /* Helpers */
 .nobr {
   @apply whitespace-nowrap;
@@ -67,31 +71,37 @@ em, i {
   @apply scale-x-100;
 }
 
-body.privacy main {
+body.page-privacy main,
+body.page-imprint main {
+  @apply leading-[1.5] pt-72 xl:pt-96
 }
 
-body.privacy main h1 {
+body.page-privacy main h1,
+body.page-imprint main h1 {
+  @apply font-light leading-[1.2] text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-32 md:mb-40 lg:mb-48;
 }
 
-body.privacy main h2 {
+body.page-privacy main h2,
+body.page-imprint main h2 {
+  @apply font-light leading-[1.2] text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-32 md:mb-40 lg:mb-48;
 }
 
-body.privacy main h3 {
+body.page-privacy main h3,
+body.page-imprint main h3 {
+  @apply font-semibold mb-5;
 }
 
-body.privacy main ul {
+body.page-privacy main article,
+body.page-imprint main article {
+  @apply max-w-3xl;
 }
 
-body.privacy main li {
+body.page-privacy main p,
+body.page-imprint main p {
+  @apply mb-25 xl:mb-35;
 }
 
-body.privacy main li p {
-}
-
-body.privacy main li:before {
-  content: "– ";
-  margin-right: 5px;
-}
-
-body.privacy main a {
+body.page-privacy main a,
+body.page-imprint main a {
+  @apply underline underline-offset-4 decoration-1 hover:no-underline
 }
