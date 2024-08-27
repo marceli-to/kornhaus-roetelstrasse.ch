@@ -1,24 +1,33 @@
+
 <script>
   document.addEventListener('alpine:init', () => {
     Alpine.data('stickyHeader', () => ({
       isSticky: false,
+      isHidden: false,
+      lastScrollY: 0,
       init() {
-        console.log('init');
-        console.log(window.scrollY);
-        console.log(this.isSticky);
         window.addEventListener('scroll', () => {
-          this.isSticky = window.scrollY > 200;
+          const currentScrollY = window.scrollY;
+          
+          // Check if we're on mobile (up to 1024px)
+          if (window.innerWidth < 1024) {
+            this.isHidden = currentScrollY > this.lastScrollY;
+          } else {
+            this.isHidden = false;
+          }
+          this.isSticky = currentScrollY > 200;
+          this.lastScrollY = currentScrollY;
         });
       }
     }));
   });
 </script>
+
 <header 
   x-data="stickyHeader"
-  :class="{ '!bg-red-50': isSticky }"
-  class="bg-white lg:bg-transparent py-15 lg:py-25 fixed top-0 left-0 right-0 w-full z-50 {{ class }}"
->
-  {{ partial:layout/inner class="lg:flex lg:justify-between lg:items-center" }}
+  :class="{ '!bg-white shadow-sm': isSticky, '-translate-y-full': isHidden }"
+  class="bg-white transition-all duration-300 lg:bg-transparent lg:!translate-y-0 py-15 lg:py-25 fixed top-0 left-0 right-0 w-full z-50 {{ class }}">
+  {{ partial:layout/inner class="lg:flex lg:justify-between lg:items-start" }}
     {{ partial:icons/logo class="block w-200 h-auto text-charcoal" }}
     {{ partial:menu/button }}
     {{ partial:menu/wrapper }}
