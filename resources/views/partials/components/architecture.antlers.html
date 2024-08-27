@@ -1,9 +1,6 @@
-<section 
-  data-section="architektur" 
-  data-section-threshold="0.6" 
-  class="py-72 md:py-96 lg:py-120">
+<section data-section="architektur">
   {{ partial:components/anchor name="architektur" }}
-  {{ partial:layout/inner }}
+  {{ partial:layout/inner class="py-72 md:py-96 lg:py-120" }}
     <h1>Architektur</h1>
     {{ if text }}
       <article class="md:columns-2 md:gap-x-30 lg:gap-x-60">
@@ -16,11 +13,10 @@
       </div>
     {{ /if }}
   {{ /partial:layout/inner }}
-
+  {{ if image }}
+    {{ partial:components/media/image 
+      :image="image" 
+      class="w-full h-auto"
+      :sizes="['md','lg','xl','2xl']" }}
+  {{ /if }}
 </section>
-{{ if image }}
-  {{ partial:components/media/image 
-    :image="image" 
-    class="w-full h-auto"
-    :sizes="['md','lg','xl','2xl']" }}
-{{ /if }}

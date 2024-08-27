@@ -1,12 +1,12 @@
 <section 
-  data-section="architektur" 
-  data-section-threshold="0.6" 
+  data-section="unternehmerliste" 
   class="py-72 md:py-96 lg:py-120">
   {{ partial:components/anchor name="unternehmerliste" }}
 
   {{ partial:layout/inner }}
     <h1>Unternehmerliste</h1>
     <h2 class="font-semibold text-sm mb-20">Planer</h2>
+
     <div class="sm:grid sm:grid-cols-12 sm:gap-y-40">
       {{ entrepreneur where="category:planner" }}
         {{ partial:components/entrepreneur }}
@@ -21,6 +21,5 @@
     </div>
 
   {{ /partial:layout/inner }}
-
 
 </section>
