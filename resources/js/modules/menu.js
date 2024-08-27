@@ -12,7 +12,7 @@
       history.replaceState(null, null, '#' + sectionId);
     }
     document.querySelectorAll(selectors.menuItem).forEach(item => {
-      item.classList.toggle('is-active', item.getAttribute('href') === '#' + sectionId);
+      item.classList.toggle('is-active', item.getAttribute('href') === '/#' + sectionId);
     });
   }
 
