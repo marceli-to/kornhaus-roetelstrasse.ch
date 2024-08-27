@@ -32,7 +32,7 @@ main li:not(main nav li) {
 
 /* Text */
 h1 {
-  @apply font-light text-4xl md:text-5xl lg:text-6xl mb-32 md:mb-40 lg:mb-48;
+  @apply font-light text-4xl sm:text-5xl lg:text-6xl mb-32 md:mb-40 lg:mb-48;
 }
 
 h2 {

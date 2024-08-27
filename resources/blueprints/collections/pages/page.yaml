@@ -55,6 +55,12 @@ tabs:
                       fields:
                         -
                           import: architecture
+                    entrepreneurs:
+                      display: Unternehmer
+                      icon: dashboard-layout
+                      fields:
+                        -
+                          import: entrepreneurs
   seo:
     display: SEO
     sections:

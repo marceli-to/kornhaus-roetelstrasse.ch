@@ -1,0 +1,42 @@
+title: Unternehmer­liste
+fields:
+  -
+    handle: entrepreneur
+    field:
+      type: replicator
+      display: Unternehmer
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            entrepreneur:
+              display: Unternehmer
+              instructions: 'Unternehmer hinzufügen'
+              icon: dashboard-layout
+              fields:
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: 'Name, Ort'
+                    validate:
+                      - required
+                -
+                  handle: role
+                  field:
+                    type: text
+                    display: Funktion
+                -
+                  handle: website
+                  field:
+                    type: link
+                    display: Website
+                -
+                  handle: category
+                  field:
+                    options:
+                      planner: Planer
+                      entrepreneur: Unternehmer
+                    default: planner
+                    type: select
+                    display: Kategorie

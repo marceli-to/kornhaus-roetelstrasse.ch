@@ -1,0 +1,23 @@
+{{ if website }}
+  <a 
+    href="{{ website }}" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="block mb-30 sm:mb-0 sm:col-span-6 lg:col-span-4 py-20 pl-25 lg:py-30 lg:pl-30 border-l border-charcoal text-md xl:text-lg group">
+    <h3 class="text-lg xl:text-xl font-semibold group-hover:translate-x-10 transition-all duration-200">
+      {{ name }}
+    </h3>
+    {{ if role }}
+      {{ role }}
+    {{ /if }}
+  </a>
+{{ else }}
+  <div class="block mb-30 sm:mb-0 sm:col-span-6 lg:col-span-4 py-20 pl-25 lg:py-30 lg:pl-30 border-l border-charcoal text-md xl:text-lg group">
+    <h3 class="text-lg xl:text-xl font-semibold mb-5">
+      {{ name }}
+    </h3>
+    {{ if role }}
+      {{ role }}
+    {{ /if }}
+  </div>
+{{ /if }}

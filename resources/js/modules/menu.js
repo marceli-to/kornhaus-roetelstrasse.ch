@@ -5,6 +5,8 @@
     section: 'section[data-section]',
   };
 
+
+  
   // Function to update hash and menu item
   function updateHashAndMenu(sectionId) {
     history.replaceState(null, null, '#' + sectionId);
