@@ -11,6 +11,7 @@ main {
 }
 
 main p {
+  @apply mb-24;
 }
 
 main p:last-child {
@@ -36,6 +37,7 @@ h1 {
 }
 
 h2 {
+  @apply font-semibold text-md lg:text-lg xl:text-xl;
 }
 
 h3 {

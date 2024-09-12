@@ -4,6 +4,7 @@ fields:
     handle: text
     field:
       buttons:
+        - h2
         - bold
         - italic
         - removeformat
