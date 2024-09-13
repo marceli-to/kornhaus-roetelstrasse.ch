@@ -1,0 +1,30 @@
+title: Gründe
+fields:
+  -
+    handle: reason_elements
+    field:
+      type: replicator
+      display: Elemente
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            editor:
+              display: Text
+              instructions: 'Text hinzufügen'
+              icon: text-formatting-initial-letter
+              fields:
+                -
+                  import: editor
+            visual:
+              display: Visualisierung
+              instructions: 'Visualisierung hinzufügen'
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  handle: visual
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Visualisierung

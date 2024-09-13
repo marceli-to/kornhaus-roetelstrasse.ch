@@ -1,0 +1,20 @@
+<section data-section="gruende">
+  {{ partial:components/anchor name="gruende" class="lg:!scroll-mt-60" }}
+  {{ partial:layout/inner class="pt-72 md:pt-96 lg:pt-120" }}
+    <h1>Warum ein Ersatzneubau</h1>
+    {{ reason_elements }}
+      {{ if type == 'editor' }}
+        <article class="max-w-5xl">
+          {{ editor }}
+        </article>
+      {{ /if }}
+      {{ if type == 'visual' }}
+        {{ partial:components/media/image 
+          :image="visual" 
+          class="w-full h-auto"
+          wrapperClass="my-36 md:my-48 lg:my-64 max-w-5xl"
+          :sizes="['md','lg','xl','2xl']" }}
+      {{ /if }}
+    {{ /reason_elements }}
+  {{ /partial:layout/inner }}
+</section>

@@ -83,6 +83,13 @@ tabs:
                       fields:
                         -
                           import: apartments
+                    reasons:
+                      display: 'Gründe für Neubau'
+                      instructions: 'Gründe für Neubau hinzufügen'
+                      icon: text-formatting-image-left
+                      fields:
+                        -
+                          import: reasons
   seo:
     display: SEO
     sections:

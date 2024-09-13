@@ -10,11 +10,18 @@ fields:
   -
     handle: cta_text
     field:
-      type: textarea
-      display: 'Text'
+      buttons:
+        - h2
+        - bold
+        - removeformat
+        - anchor
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Text
   -
     handle: cta_link
     field:
       input_type: email
       type: text
-      display: 'Link'
+      display: Link

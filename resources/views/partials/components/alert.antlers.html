@@ -1,0 +1,24 @@
+<div x-data="{
+  show: true,
+  init() {
+    const alertAcceptData = localStorage.getItem('alert-accept');
+    if (alertAcceptData) {
+      const { accepted, timestamp } = JSON.parse(alertAcceptData);
+      const twoHoursAgo = Date.now() - (2 * 60 * 60 * 1000);
+      this.show = !accepted || timestamp < twoHoursAgo;
+    }
+  }
+}">
+<div x-cloak x-show="show" class="lightbox flex justify-center items-center fixed w-full h-full left-0 top-0 z-[500] bg-terracotta bg-opacity-70">
+  <div class="bg-white bg-opacity-70 text-sm md:text-lg w-full sm:w-[420px] lg:w-[600px] text-pretty left-0 bottom-0 p-15 pt-10 md:p-30 mx-10 [&>h2]:mb-16 [&>h2]:lg:mb-24">
+    {{ cta_text }}
+    <div class="mt-24">
+      <button
+        @click="localStorage.setItem('alert-accept', JSON.stringify({ accepted: true, timestamp: Date.now() })); show = false"
+        class="bg-black hover:bg-terracotta transition-all font-bold text-white leading-none py-8 px-16">
+        Schliessen
+      </button>
+    </div>
+  </div>
+</div>
+</div>

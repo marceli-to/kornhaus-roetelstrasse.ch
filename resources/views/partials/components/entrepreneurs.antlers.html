@@ -1,25 +1,11 @@
-<section 
-  data-section="unternehmerliste" 
-  class="py-72 md:py-96 lg:py-120">
-  {{ partial:components/anchor name="unternehmerliste" }}
-
-  {{ partial:layout/inner }}
+  <section data-section="unternehmerliste">
+    {{ partial:components/anchor name="unternehmerliste" class="lg:!scroll-mt-60" }}
+    {{ partial:layout/inner class="py-72 md:py-96 lg:py-120" }}
     <h1>Unternehmerliste</h1>
-    {{# <h2 class="font-semibold text-sm mb-20">Planer</h2> #}}
-
     <div class="sm:grid sm:grid-cols-12 sm:gap-y-40">
       {{ entrepreneur }}
         {{ partial:components/entrepreneur }}
     {{ /entrepreneur }}
     </div>
-
-    {{# <h2 class="font-semibold text-sm mb-20 mt-72 md:mt-96 lg:mt-120">Unternehmer</h2>
-    <div class="sm:grid sm:grid-cols-12 sm:gap-y-40">
-      {{ entrepreneur where="category:entrepreneur" }}
-        {{ partial:components/entrepreneur }}
-    {{ /entrepreneur }}
-    </div> #}}
-
   {{ /partial:layout/inner }}
-
 </section>
