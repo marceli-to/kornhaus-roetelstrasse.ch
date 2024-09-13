@@ -1,0 +1,32 @@
+<section 
+  data-section="wohnungen"
+  class="bg-terracotta">
+  {{ partial:components/anchor name="wohnungen" }}
+  {{ partial:layout/inner class="py-72 md:py-96 lg:py-120" }}
+  <h1>Wohnungen</h1>
+  {{ if apartments }}
+    <table class="mb-32 md:mb-44 lg:mb-56 w-full max-w-4xl text-sm md:text-md lg:text-lg xl:text-xl">
+      <thead class="font-work-sans font-bold text-xs text-left [&>tr]:border-b-2 [&>tr]:border-charcoal [&>tr>th]:pb-12 [&>tr>th]:md:pb-16">
+        <tr>
+          <th class="pr-18 sm:pr-24 md:pr-36 lg:pr-48">Anzahl</th>
+          <th>Wohnungstyp</th>
+        </tr>
+      </thead>
+      <tbody class="[&>tr]:border-b [&>tr]:border-charcoal [&>tr>td]:py-12 [&>tr>td]:md:py-16 [&>tr>td]:align-top">
+        {{ apartments }}
+          <tr>
+            <td>{{ quantity }}</td>
+            <td>{{ description }}</td>
+          </tr>
+        {{ /apartments }}
+      </tbody>
+    </table>
+  {{ /if }}
+  {{ if editor }}
+    <article class="max-w-5xl">
+      {{ editor }}
+    </article>
+  {{ /if }}
+
+  {{ /partial:layout/inner }}
+</section>

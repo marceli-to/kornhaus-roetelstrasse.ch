@@ -76,6 +76,13 @@ tabs:
                       fields:
                         -
                           import: portrait
+                    apartments:
+                      display: Wohnungen
+                      instructions: 'Wohnungen hinzufügen'
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: apartments
   seo:
     display: SEO
     sections:

@@ -1,0 +1,31 @@
+title: Wohnungen
+fields:
+  -
+    handle: apartments
+    field:
+      type: replicator
+      display: Wohnungen
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            apartment:
+              display: Wohnung
+              instructions: 'Wohnungstyp hinzufügen'
+              icon: layout-split-horizontal
+              fields:
+                -
+                  handle: quantity
+                  field:
+                    input_type: number
+                    type: text
+                    display: Anzahl
+                    width: 33
+                -
+                  handle: description
+                  field:
+                    type: text
+                    display: Typ
+                    width: 66
+  -
+    import: editor
