@@ -4,4 +4,6 @@ Alpine.start();
 
 import './bootstrap';
 import './modules/touch';
-import './modules/menu';
+// import './modules/menu';
+import './modules/scrollspy';
+
