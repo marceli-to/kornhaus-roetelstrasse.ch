@@ -27,7 +27,7 @@ export default {
       },
 
       colors: {
-        'terracotta': '#c96d65',
+        'terracotta': '#D58D86', //'#c96d65'
         'charcoal': '#262626'
       },
 

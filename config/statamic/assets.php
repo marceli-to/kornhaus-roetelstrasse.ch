@@ -129,6 +129,16 @@ return [
           'xl-focal-16-9' => ['w' => 1440, 'h' => 810, 'q' => 90, 'fit' => 'crop_focal'],
           '2xl-focal-16-9' => ['w' => 1680, 'h' => 945, 'q' => 90, 'fit' => 'crop_focal'],
 
+          // Focal point images (16:10)
+          'md-focal-16-10-webp' => ['w' => 768, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'lg-focal-16-10-webp' => ['w' => 1280, 'h' => 800, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'xl-focal-16-10-webp' => ['w' => 1440, 'h' => 810, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          '2xl-focal-16-10-webp' => ['w' => 1680, 'h' => 945, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'md-focal-16-10' => ['w' => 768, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal'],
+          'lg-focal-16-10' => ['w' => 1280, 'h' => 800, 'q' => 90, 'fit' => 'crop_focal'],
+          'xl-focal-16-10' => ['w' => 1440, 'h' => 810, 'q' => 90, 'fit' => 'crop_focal'],
+          '2xl-focal-16-10' => ['w' => 1680, 'h' => 945, 'q' => 90, 'fit' => 'crop_focal'],
+
           'max_upload_size' => ['w' => 4000, 'h' => 4000, 'fit' => 'max'],
 
         ],

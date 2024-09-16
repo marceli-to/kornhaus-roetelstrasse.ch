@@ -12,11 +12,14 @@
         {{ callout }}
       </div>
     {{ /if }}
-  {{ /partial:layout/inner }}
   {{ if image }}
     {{ partial:components/media/image 
       :image="image" 
       class="w-full h-auto"
+      wrapperClass="mt-72 md:mt-96 lg:mt-120"
+      preset="'focal-4-3'"
       :sizes="['md','lg','xl','2xl']" }}
   {{ /if }}
+  {{ /partial:layout/inner }}
+
 </section>
