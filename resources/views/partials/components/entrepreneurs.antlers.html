@@ -6,6 +6,7 @@
     <h2 class="font-semibold text-sm mb-20">Planer</h2>
     <div class="sm:grid sm:grid-cols-12 sm:gap-y-40">
       {{ entrepreneur where="category:planner" }}
+        {{ index}}
         {{ partial:components/entrepreneur }}
     {{ /entrepreneur }}
     </div>
