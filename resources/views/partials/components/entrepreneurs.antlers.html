@@ -6,8 +6,13 @@
     <h2 class="font-semibold text-sm mb-20">Planer</h2>
     <div class="sm:grid sm:grid-cols-12 sm:gap-y-40">
       {{ entrepreneur where="category:planner" }}
-        {{ index}}
+        {{ if index == 5 }}
+        <div class="block mb-30 sm:mb-0 sm:col-span-6 lg:col-span-4 py-20 pl-25 lg:py-30 lg:pl-30 border-l border-charcoal text-md xl:text-lg group">
+
+        </div>
+        {{ else }}
         {{ partial:components/entrepreneur }}
+        {{ /if }}
     {{ /entrepreneur }}
     </div>
 
