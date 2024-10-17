@@ -8,8 +8,8 @@
       {{ entrepreneur where="category:planner" }}
         {{ if index == 5 }}
         <div class="block mb-30 sm:mb-0 sm:col-span-6 lg:col-span-4 py-20 pl-25 lg:py-30 lg:pl-30 text-md xl:text-lg group">
-
         </div>
+        {{ partial:components/entrepreneur }}
         {{ else }}
         {{ partial:components/entrepreneur }}
         {{ /if }}
