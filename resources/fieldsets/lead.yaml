@@ -14,3 +14,8 @@ fields:
       remove_empty_nodes: true
       type: bard
       display: Text
+  -
+    handle: image_url
+    field:
+      type: text
+      display: 'Bild URL Baufortschritt'

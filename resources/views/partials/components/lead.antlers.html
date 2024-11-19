@@ -5,5 +5,11 @@
     <div class="max-w-3xl xl:max-w-4xl font-semibold text-md md:text-lg lg:text-2xl xl:text-3xl leading-[1.4] hyphens-auto text-pretty">
       {{ text }}
     </div>
+    {{ if image_url }}
+    <div class="max-w-3xl xl:max-w-4xl mt-36 md:mt-48 lg:mt-64">
+      <h2 class="font-semibold text-xl lg:text-2xl xl:text-3xl mb-16 md:mb-20 lg:mb-24">Baufortschritt</h2>
+      <img src="{{ image_url }}" alt="{{ title }}" class="w-full">
+    </div>
+    {{ /if }}
   {{ /partial:layout/inner }}
 </section>
