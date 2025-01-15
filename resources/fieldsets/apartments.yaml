@@ -24,7 +24,13 @@ fields:
                 -
                   handle: description
                   field:
-                    type: text
+                    buttons:
+                      - bold
+                      - anchor
+                      - superscript
+                    toolbar_mode: floating
+                    remove_empty_nodes: true
+                    type: bard
                     display: Typ
                     width: 66
   -
