@@ -90,6 +90,13 @@ tabs:
                       fields:
                         -
                           import: reasons
+                    video:
+                      display: Video
+                      instructions: 'Video hinzufügen'
+                      icon: media-webcam-video
+                      fields:
+                        -
+                          import: video
   seo:
     display: SEO
     sections:

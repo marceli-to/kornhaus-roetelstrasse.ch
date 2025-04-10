@@ -5,6 +5,18 @@
     <div class="max-w-3xl xl:max-w-4xl font-semibold text-md md:text-lg lg:text-2xl xl:text-3xl leading-[1.4] hyphens-auto text-pretty">
       {{ text }}
     </div>
+
+    {{ if video }}
+    <div class="max-w-3xl xl:max-w-4xl mt-36 md:mt-48 lg:mt-64">
+      <h2 class="font-semibold text-xl lg:text-2xl xl:text-3xl mb-16 md:mb-20 lg:mb-24">Rückbau</h2>
+      <video class="w-full aspect-video" controls>
+        <source src="{{ video:url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    {{ /if }}
+
     {{ if image_url }}
     <div class="max-w-3xl xl:max-w-4xl mt-36 md:mt-48 lg:mt-64">
       <h2 class="font-semibold text-xl lg:text-2xl xl:text-3xl mb-16 md:mb-20 lg:mb-24">Baufortschritt</h2>

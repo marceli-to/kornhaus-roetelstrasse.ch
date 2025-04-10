@@ -15,6 +15,13 @@ fields:
       type: bard
       display: Text
   -
+    handle: video
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Video Abbruch'
+  -
     handle: image_url
     field:
       type: text

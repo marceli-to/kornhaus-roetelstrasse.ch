@@ -1,0 +1,14 @@
+title: Video
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: file
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Datei
